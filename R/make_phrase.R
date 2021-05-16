@@ -38,7 +38,7 @@ make_phrase <- function(num, num_word, item, verb, adjective, location){
     num_word <- "a"
 
   }
-  myphrase = paste(num_word,item,verb,adjective,location)
+  myphrase = paste(num_word,adjective,item,verb,location)
   myphrase <- str_trim(myphrase, side = c("both", "left", "right"))
 
   return(myphrase)
